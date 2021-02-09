@@ -1,0 +1,17 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "seed.js",
+  "scripts": {
+    "seed": "node scripts/index --amount 30"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "faker-br": "^0.3.0",
+    "randexp": "^0.5.3",
+    "yargs": "^16.2.0"
+  }
+}

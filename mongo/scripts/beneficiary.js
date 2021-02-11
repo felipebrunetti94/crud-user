@@ -9,17 +9,17 @@ const getRandom = (list) => list[Math.floor(Math.random() * list.length)];
 
 const getRandomAgency = (bank) => {
   if (bank === "001") {
-    const base = new RandExp(/^[0-9]{0,4}$/).gen();
+    const number = new RandExp(/^[0-9]{0,4}$/).gen();
     const digit = new RandExp(/^[xX0-9]{0,1}$/).gen();
     return {
-      base,
+      number,
       digit,
     };
   } else {
-    const base = new RandExp(/^(?!0+$)[0-9]{0,10}$/).gen();
+    const number = new RandExp(/^(?!0+$)[0-9]{0,10}$/).gen();
     const digit = new RandExp(/^[0-9]{0,1}$/).gen();
     return {
-      base,
+      number,
       digit,
     };
   }
@@ -27,17 +27,17 @@ const getRandomAgency = (bank) => {
 
 const getRandomAccount = (bank) => {
   if (bank === "001") {
-    const base = new RandExp(/^[0-9]{0,8}$/).gen();
+    const number = new RandExp(/^[0-9]{0,8}$/).gen();
     const digit = new RandExp(/^(?!0+$)[0-9]{0,11}$/).gen();
     return {
-      base,
+      number,
       digit,
     };
   } else {
-    const base = new RandExp(/^(?!0+$)[0-9]{0,11}$/).gen();
+    const number = new RandExp(/^(?!0+$)[0-9]{0,11}$/).gen();
     const digit = new RandExp(/^[0-9]{0,1}$/).gen();
     return {
-      base,
+      number,
       digit,
     };
   }
@@ -54,6 +54,7 @@ const createBeneficiary = () => {
     documentID: faker.br.cpf(),
     accountType: getRandom(accountType),
   };
+
   return beneficiary;
 };
 

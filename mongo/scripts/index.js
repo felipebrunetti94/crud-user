@@ -20,7 +20,7 @@ if (argv.hasOwnProperty("amount")) {
   const beneficiaries = generateBeneficiaries(amount);
 
   const jsonObj = JSON.stringify(beneficiaries);
-  console.log(file);
+
   fs.writeFile(file, jsonObj, function (err, data) {
     if (err) {
       return console.log(err);

@@ -1,0 +1,11 @@
+export const CHECK = "CHECK";
+export const CHECK_ALL = "CHECK_ALL";
+export const ADD = "ADD";
+export const EDIT = "EDIT";
+export const DELETE = "DELETE";
+export const GO_TO_DEFAULT = "GO_TO_DEFAULT";
+export const UPDATE_BENEFICIARIES = "UPDATE_BENEFICIARIES";
+export const UPDATE_FILTER = "UPDATE_FILTER";
+export const DELETE_BENEFICIARY = "DELETE_BENEFICIARY";
+export const UPDATE_EDITED = "UPDATE_EDITED";
+export const REMOVE_TOAST = "REMOVE_TOAST";
